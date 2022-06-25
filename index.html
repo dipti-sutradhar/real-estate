@@ -55,7 +55,7 @@
                       
                     </div>
                   </li>
-                <li><a href="">Projects</a></li>
+              
                 <li><a href="">News & Events</a></li>
                 <li><a href="">Career</a></li>
                 
@@ -180,11 +180,201 @@
 
     </div>
     
-    
-ggfgfgf
+  
     </div>
+    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading1">First</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2">Second</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+      <h4 id="scrollspyHeading1">First heading</h4>
+      <p>...</p>
+      <h4 id="scrollspyHeading2">Second heading</h4>
+      <p>...</p>
+      <h4 id="scrollspyHeading3">Third heading</h4>
+      <p>...</p>
+      <h4 id="scrollspyHeading4">Fourth heading</h4>
+      <p>...</p>
+      <h4 id="scrollspyHeading5">Fifth heading</h4>
+      <p>...</p>
+    </div>
+    <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link" href="#item-1">Item 1</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+          <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+        </nav>
+        <a class="nav-link" href="#item-2">Item 2</a>
+        <a class="nav-link" href="#item-3">Item 3</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+          <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+        </nav>
+      </nav>
+    </nav>
+    
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
+      <h4 id="item-1">Item 1</h4>
+      <p>...</p>
+      <h5 id="item-1-1">Item 1-1</h5>
+      <p>...</p>
+      <h5 id="item-1-2">Item 1-2</h5>
+      <p>...</p>
+      <h4 id="item-2">Item 2</h4>
+      <p>...</p>
+      <h4 id="item-3">Item 3</h4>
+      <p>...</p>
+      <h5 id="item-3-1">Item 3-1</h5>
+      <p>...</p>
+      <h5 id="item-3-2">Item 3-2</h5>
+      <p>...</p>
+    </div>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Launch static backdrop modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="img/1644926591JwK6U.jpg" class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
+<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="img/1644926903bajOx.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">click here</p>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<footer class="container">
+  <div class="clearfix my-5">
+    <img src="img/1644926203XgbMY (1).jpg" class="rounded float-start" alt="...">
+<img src="img/1644926591JwK6U.jpg" class="rounded float-end" alt="...">
+
+  </div>
+  <img src="img/1644926903bajOx.jpg" class="rounded mx-auto d-block" alt="...">
+  <br>
+  <h1 class="my-5">thumbnail</h1>
+  <img src="img/1644926903bajOx.jpg" class="float-end w-25">
+  <div class="clearfix my-5"></div>
+  <img src="img/1644926591JwK6U.jpg" class="d-block mx-auto w-25 rounded">
+  <br>
+  <picture>
+    <source srcset="img-fluid" type="image/svg+xml">
+    <img src="img/1644926591JwK6U.jpg" class="img-fluid img-thumbnail" alt="...">
+  </picture>
+</footer>
+<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">google map websites</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+
+<div class="container1">
+  <h1>Embed location Map</h1>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.8990681564!2d90.37139331445584!3d23.75097839467224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf4d6018f643%3A0x603d2d083289b4a3!2z4Kan4Ka-4Kao4Kau4Kao4KeN4Kah4Ka_IOCnqeCnqCDgprjgp5zgppUg4Kas4KeN4Kaw4Ka_4KacLCDgpqfgpr7gpqjgpq7gpqjgp43gpqHgpr8g4Kas4KeN4Kaw4Ka_4KacLCDgpqLgpr7gppXgpr4gMTIwOQ!5e0!3m2!1sbn!2sbd!4v1656147121078!5m2!1sbn!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+</div>
     
 </section>
+<!-- <footer class="container"> -->
+  <!-- <div class="thumbnail"> -->
+    <!-- <img src="img/1644926203XgbMY (1).jpg" class="rounded float-start" alt="..."> -->
+<!-- <img src="img/1644926591JwK6U.jpg" class="rounded float-end" alt="..."> -->
+
+  <!-- </div> -->
+
+<!-- </footer> -->
 <button ></button>
 
     
